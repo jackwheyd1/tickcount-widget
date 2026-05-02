@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Support — TickCount Widget</title>
+    <style>
+        :root {
+            --bg: #f8f9fa;
+            --card-bg: #ffffff;
+            --text: #1a1a2e;
+            --text-secondary: #555;
+            --accent: #4a6cf7;
+            --border: #e5e7eb;
+            --radius: 12px;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            border-radius: var(--radius);
+            padding: 48px 40px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+        }
+        h1 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: var(--text);
+        }
+        .subtitle {
+            font-size: 15px;
+            color: var(--text-secondary);
+            margin-bottom: 32px;
+        }
+        h2 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-top: 32px;
+            margin-bottom: 10px;
+            color: var(--text);
+        }
+        p, li {
+            font-size: 15px;
+            color: var(--text-secondary);
+            margin-bottom: 10px;
+        }
+        ul {
+            padding-left: 20px;
+            margin-bottom: 10px;
+        }
+        li { margin-bottom: 6px; }
+        .feature-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            margin: 16px 0;
+        }
+        .feature-card {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 16px;
+        }
+        .feature-card h3 {
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 4px;
+            color: var(--text);
+        }
+        .feature-card p {
+            font-size: 13px;
+            margin: 0;
+            color: var(--text-secondary);
+        }
+        .contact-box {
+            background: #eef2ff;
+            border-radius: 10px;
+            padding: 24px;
+            text-align: center;
+            margin: 24px 0;
+        }
+        .contact-box h2 { margin-top: 0; }
+        .email-link {
+            display: inline-block;
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--accent);
+            margin-top: 8px;
+        }
+        a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+        a:hover { text-decoration: underline; }
+        footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border);
+            font-size: 13px;
+            color: #999;
+        }
+        @media (max-width: 500px) {
+            .feature-grid { grid-template-columns: 1fr; }
+            .container { padding: 28px 20px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Technical Support</h1>
+        <p class="subtitle">TickCount Widget — Offline countdowns that feel calm and reliable.</p>
+
+        <h2>About the App</h2>
+        <p>TickCount Widget is an offline countdown timer for iPhone. Track important dates like exams, birthdays, anniversaries, project deadlines, and trips — all stored locally on your device.</p>
+
+        <div class="feature-grid">
+            <div class="feature-card">
+                <h3>Countdown Dashboard</h3>
+                <p>See your most important countdowns at a glance with large, clear day counters.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Calendar View</h3>
+                <p>Browse your countdowns in a monthly calendar with color-coded event dots.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Export &amp; Share</h3>
+                <p>Generate beautiful PNG images or PDF documents of any countdown to share.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Local Reminders</h3>
+                <p>Set per-event reminder notifications — processed entirely on your device.</p>
+            </div>
+        </div>
+
+        <h2>Frequently Asked Questions</h2>
+
+        <h3 style="font-size:15px;font-weight:600;margin-top:16px;">Does the app require an internet connection?</h3>
+        <p>No. TickCount Widget works completely offline. There are no accounts, no syncing, and no network requests.</p>
+
+        <h3 style="font-size:15px;font-weight:600;margin-top:16px;">Is my data backed up?</h3>
+        <p>In the current version, countdown data is stored locally on your device. A backup/restore feature is planned for a future update.</p>
+
+        <h3 style="font-size:15px;font-weight:600;margin-top:16px;">Can I use the app on iPad or Mac?</h3>
+        <p>Currently TickCount Widget is designed for iPhone only (iOS 17.0+). iPad and Mac support may be added in the future.</p>
+
+        <h3 style="font-size:15px;font-weight:600;margin-top:16px;">Are there in-app purchases or ads?</h3>
+        <p>No. TickCount Widget has no ads, no in-app purchases, and no subscriptions.</p>
+
+        <h3 style="font-size:15px;font-weight:600;margin-top:16px;">How do I delete an event?</h3>
+        <p>Swipe left on any event in the event list, or open the event and tap the delete button in the editor.</p>
+
+        <div class="contact-box">
+            <h2>Still need help?</h2>
+            <p>Send an email and I'll get back to you as soon as possible.</p>
+            <a class="email-link" href="mailto:jackwheyd3@gmail.com">jackwheyd3@gmail.com</a>
+        </div>
+
+        <footer>
+            &copy; 2026 TickCount Widget. All rights reserved.
+        </footer>
+    </div>
+</body>
+</html>
