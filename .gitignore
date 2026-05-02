@@ -1,0 +1,10 @@
+# Xcode
+build/
+*.xcuserdata
+*.xcworkspace/xcuserdata
+DerivedData/
+*.xccheckout
+
+# macOS
+.DS_Store
+Thumbs.db
